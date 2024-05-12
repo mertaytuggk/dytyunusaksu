@@ -31,8 +31,8 @@ const Header = () => {
             <FaPlus size={24} />
           </button>
           <div className={styles.gridMenu}>
-            <Link href={"/Home"}>Ana Sayfa</Link>
-            <Link href={"/About"}>Beni Tanıyın</Link>
+            <Link href={"/"}>Ana Sayfa</Link>
+            <Link href={"/about"}>Beni Tanıyın</Link>
             <Link href={"/Services"}>Hizmetler</Link>
             <Link href={"/Blog"}>Blog</Link>
             <Link href={"/Contact"}>İletişim</Link>
@@ -70,7 +70,7 @@ const Header = () => {
       <div className={styles.upBarMain}>
         <div className={styles.upBar}>
           <span className={styles.menuUpBar}>
-            <Link href={"/Home"}>Ana Sayfa</Link>
+            <Link href={"/"}>Ana Sayfa</Link>
             <Link href={"/About"}>Beni Tanıyın</Link>
             <Link href={"/Services"}>Hizmetler</Link>
             <Link href={"/Blog"}>Blog</Link>
@@ -82,8 +82,12 @@ const Header = () => {
               dyt.yunusaksu@gmail.com
             </Link>
             <Link href={"tel:+90 534 544 05 06"}>+90 534 544 05 06</Link>
-            <Link href={""} target="_blank">
-              <Image src={DoktorumLogo} alt="Doktorum Logo" />
+            <Link className={styles.logoHeader} href={""} target="_blank">
+              <Image
+                className={styles.logoHeader}
+                src={DoktorumLogo}
+                alt="Doktorum Logo"
+              />
             </Link>
             <Link
               href={"https://www.instagram.com/diyetisyenyunusaksu/"}

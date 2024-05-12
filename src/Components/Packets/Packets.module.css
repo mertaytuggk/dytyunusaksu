@@ -1,0 +1,50 @@
+.packetsMain {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5rem;
+}
+.title {
+  font-size: 3.5rem;
+}
+.text {
+  font-size: 1.2rem;
+  color: #a34a21;
+}
+.packetsTitle {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+}
+.flexPackets {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+}
+.infoText {
+  display: flex;
+  flex-direction: column;
+  width: 25%;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  gap: 2rem;
+}
+.info {
+  vertical-align: baseline;
+}
+@media only screen and (max-width: 500px) {
+  .packetsMain {
+    align-items: center;
+    text-align: center;
+  }
+  .flexPackets {
+    flex-direction: column;
+  }
+  .infoText {
+    width: 80%;
+  }
+}
