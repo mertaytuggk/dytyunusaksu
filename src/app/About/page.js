@@ -1,10 +1,12 @@
 import React from "react";
+import Yunus from "../../../public/yunus.JPG";
+import Image from "next/image";
 
 export default function About() {
   return (
     <div className="flex w-full items-center justify-center py-12">
       <div className="grid w-[45%] items-center justify-center  gap-8 text-center">
-        <div>Fotoğraf</div>
+        <Image className="rounded-[150%]" src={Yunus} alt="Yunus" />
         <div className=" grid items-center justify-between gap-8 rounded-md bg-rose-100  py-8">
           <span className="text-xl font-bold">
             Merhaba, ben Diyetisyen Yunus Aksu

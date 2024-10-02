@@ -2,6 +2,7 @@ import React from "react";
 import styles from "./mainCard.module.css";
 import { FaInstagram } from "react-icons/fa";
 import DoktorumLogo from "../../../public/DoktorumLogo.png";
+import Yunus from "../../../public/yunus.JPG";
 import Logo from "../../../public/Logo.svg";
 import Link from "next/link";
 import Image from "next/image";
@@ -37,7 +38,9 @@ const index = () => {
           </span>
         </span>
       </div>
-      <div className={styles.rightCard}>fotoğraf</div>
+      <div className={styles.rightCard}>
+        <Image className="rounded-xl" src={Yunus} alt="Yunus" />
+      </div>
     </div>
   );
 };
