@@ -1,0 +1,10 @@
+.footer {
+  /* Footer'ın arka plan rengi */
+  background-color: #f8f4f1;
+}
+
+@media only screen and (max-width: 500px) {
+  .footer {
+    padding: 20px; /* Mobil versiyonda daha fazla padding */
+  }
+}
