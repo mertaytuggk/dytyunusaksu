@@ -39,17 +39,47 @@ const Header = () => {
             onClick={() => setOpen(!open)}
             className="items-left flex flex-col gap-6"
           >
-            <Link href={"/"}>Ana Sayfa</Link>
-            <Link href={"/About"}>Beni Tanıyın</Link>
-            <Link href={"/Services"}>Hizmetler</Link>
-            <Link href={"/Blog"}>Blog</Link>
-            <Link href={"/Contact"}>İletişim</Link>
-            <Link href={"/Terms"}>Kullanım Şartları</Link>
-            <Link href={"mailto:dyt.yunusaksu@gmail.com"}>
+            <Link className=" hover:text-[rgb(163,74,33,0.2)]" href={"/"}>
+              Ana Sayfa
+            </Link>
+            <Link className=" hover:text-[rgb(163,74,33,0.2)]" href={"/About"}>
+              Beni Tanıyın
+            </Link>
+            <Link
+              className=" hover:text-[rgb(163,74,33,0.2)]"
+              href={"/Services"}
+            >
+              Hizmetler
+            </Link>
+            <Link className=" hover:text-[rgb(163,74,33,0.2)]" href={"/Blog"}>
+              Blog
+            </Link>
+            <Link
+              className=" hover:text-[rgb(163,74,33,0.2)]"
+              href={"/Contact"}
+            >
+              İletişim
+            </Link>
+            <Link className=" hover:text-[rgb(163,74,33,0.2)]" href={"/Terms"}>
+              Kullanım Şartları
+            </Link>
+            <Link
+              className=" hover:text-[rgb(163,74,33,0.2)]"
+              href={"mailto:dyt.yunusaksu@gmail.com"}
+            >
               dyt.yunusaksu@gmail.com
             </Link>
-            <Link href={"tel:+90 534 544 05 06"}>+90 534 544 05 06</Link>
-            <Link href={""} target="_blank">
+            <Link
+              className=" hover:text-[rgb(163,74,33,0.2)]"
+              href={"tel:+90 534 544 05 06"}
+            >
+              +90 534 544 05 06
+            </Link>
+            <Link
+              className=" hover:text-[rgb(163,74,33,0.2)]"
+              href={""}
+              target="_blank"
+            >
               <Image src={DoktorumLogo} alt="Doktorum Logo" />
             </Link>
             <Link
@@ -87,18 +117,44 @@ const Header = () => {
       <div className={` ${styles.upBarMain}`}>
         <div className={` shadow-lg ${styles.upBar}`}>
           <span className={styles.menuUpBar}>
-            <Link href={"/"}>Ana Sayfa</Link>
-            <Link href={"/About"}>Beni Tanıyın</Link>
-            <Link href={"/Services"}>Hizmetler</Link>
-            <Link href={"/Blog"}>Blog</Link>
-            <Link href={"/Contact"}>İletişim</Link>
-            <Link href={"/Terms"}>Kullanım Şartları</Link>
+            <Link className=" hover:text-[rgb(163,74,33,0.2)]" href={"/"}>
+              Ana Sayfa
+            </Link>
+            <Link className=" hover:text-[rgb(163,74,33,0.2)]" href={"/About"}>
+              Beni Tanıyın
+            </Link>
+            <Link
+              className=" hover:text-[rgb(163,74,33,0.2)]"
+              href={"/Services"}
+            >
+              Hizmetler
+            </Link>
+            <Link className=" hover:text-[rgb(163,74,33,0.2)]" href={"/Blog"}>
+              Blog
+            </Link>
+            <Link
+              className=" hover:text-[rgb(163,74,33,0.2)]"
+              href={"/Contact"}
+            >
+              İletişim
+            </Link>
+            <Link className=" hover:text-[rgb(163,74,33,0.2)]" href={"/Terms"}>
+              Kullanım Şartları
+            </Link>
           </span>
           <span className={styles.menuUpBar}>
-            <Link href={"mailto:dyt.yunusaksu@gmail.com"}>
+            <Link
+              className=" hover:text-[rgb(163,74,33,0.2)]"
+              href={"mailto:dyt.yunusaksu@gmail.com"}
+            >
               dyt.yunusaksu@gmail.com
             </Link>
-            <Link href={"tel:+90 534 544 05 06"}>+90 534 544 05 06</Link>
+            <Link
+              className=" hover:text-[rgb(163,74,33,0.2)]"
+              href={"tel:+90 534 544 05 06"}
+            >
+              +90 534 544 05 06
+            </Link>
             <Link className={styles.logoHeader} href={""} target="_blank">
               <Image
                 className={styles.logoHeader}
