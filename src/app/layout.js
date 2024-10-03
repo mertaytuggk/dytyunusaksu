@@ -15,9 +15,10 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={PTSerif.className}>
-        <Header />
-        {children}
-        <Footer />
+        <div className="flex min-h-screen flex-col ">
+          <Header />
+          {children}
+        </div>
       </body>
     </html>
   );
