@@ -9,25 +9,30 @@ import Image from "next/image";
 
 const index = () => {
   return (
-    <div className={styles.mainCard}>
-      <div className={styles.leftCard}>
-        <span className={styles.cardTitle}>Selam, Ben Yunus Aksu</span>
-        <span className={styles.textCard}>
+    <div
+      className={`flex justify-around bg-[#f8f4f1] px-36 py-8 font-medium ${styles.mainCard}`}
+    >
+      <div
+        className={`items-left flex w-[60%] flex-col justify-center gap-12 ${styles.leftCard}`}
+      >
+        <span className={`text-[2rem] ${styles.cardTitle}`}>
+          Selam, Ben Yunus Aksu
+        </span>
+        <span className={`w-[55%] text-xl ${styles.textCard}`}>
           Mesleğime başladığımdan beri amacım; birçok insanın hayatına dokunarak
           onlara sağlıklı beslenmeyi öğretmek. Bugüne dek yüzlerce danışanımla
           bunu başardık ve başarmaya devam ediyoruz.
         </span>
-        <span className={styles.downCard}>
-          <Link className={styles.buttonCard} href={"/About"}>
+        <span className={`flex w-[60%] justify-between ${styles.downCard}`}>
+          <Link
+            className={`rounded-lg bg-[#a34a21] px-4 py-2 text-lg text-white hover:bg-[#c15a31] ${styles.buttonCard}`}
+            href={"/About"}
+          >
             Beni Tanıyın
           </Link>
-          <span className={styles.LogoFlex}>
+          <span className={`item flex gap-6 ${styles.LogoFlex}`}>
             <Link href={""} target="_blank">
-              <Image
-                className={styles.logoCard}
-                src={DoktorumLogo}
-                alt="Doktorum Logo"
-              />
+              <Image className="w-8" src={DoktorumLogo} alt="Doktorum Logo" />
             </Link>{" "}
             <Link
               href={"https://www.instagram.com/diyetisyenyunusaksu/"}
@@ -38,7 +43,7 @@ const index = () => {
           </span>
         </span>
       </div>
-      <div className={styles.rightCard}>
+      <div className={`w-[40%] ${styles.rightCard}`}>
         <Image className="rounded-xl" src={Yunus} alt="Yunus" />
       </div>
     </div>
