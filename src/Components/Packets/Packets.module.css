@@ -1,41 +1,3 @@
-.packetsMain {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  gap: 5rem;
-}
-.title {
-  font-size: 3.5rem;
-}
-.text {
-  font-size: 1.2rem;
-  color: #a34a21;
-}
-.packetsTitle {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 3rem;
-}
-.flexPackets {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 3rem;
-}
-.infoText {
-  display: flex;
-  flex-direction: column;
-  width: 25%;
-  justify-content: space-between;
-  align-items: center;
-  text-align: center;
-  gap: 2rem;
-}
-.info {
-  vertical-align: baseline;
-}
 @media only screen and (max-width: 500px) {
   .packetsMain {
     align-items: center;
@@ -46,5 +8,42 @@
   }
   .infoText {
     width: 80%;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .packetsMain {
+    align-items: center;
+    text-align: center;
+  }
+
+  .flexPackets {
+    flex-direction: column; /* Dikey hizalamak için */
+    gap: 16px; /* Elemanlar arasında biraz boşluk */
+  }
+
+  .infoText {
+    width: 80%;
+  }
+
+  /* Ekstra stil önerileri */
+  .infoText span:nth-child(1) {
+    /* Logonun stilini burada düzenleyebilirsiniz */
+    width: 100px; /* İsteğe bağlı logo boyutu */
+  }
+
+  .infoText span:nth-child(2) {
+    /* Tanışıyoruz! başlığı */
+    font-weight: bold; /* Kalın yaparak vurgulayabiliriz */
+  }
+}
+
+/* Desktop için ek stil */
+@media only screen and (min-width: 500px) {
+  .flexPackets {
+    flex-direction: row; /* Yatay hizalamak için */
+  }
+
+  .infoText {
+    width: 25%; /* Daha geniş ekranlarda daha az yer kaplar */
   }
 }
