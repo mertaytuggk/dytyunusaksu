@@ -1,10 +1,11 @@
-.mainHeader {
+.headerContainer {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 2rem 4rem;
-  background-color: var(--light-color);
+  padding: 20px;
+  background-color: #f8f4f1;
 }
+
 .headerLogo {
   display: flex;
   flex-direction: column;
@@ -47,14 +48,6 @@
   gap: 1rem;
 }
 
-.mainMobile {
-  position: relative;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 2rem 2rem;
-  background-color: var(--light-color);
-}
 .menuClose {
   rotate: 45deg;
   position: absolute;
