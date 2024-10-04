@@ -10,7 +10,7 @@ import Image from "next/image";
 const index = () => {
   return (
     <div
-      className={`flex justify-around bg-[#f8f4f1] px-36 py-8 font-medium ${styles.mainCard}`}
+      className={`flex justify-around bg-[#f8f4f1] px-36 py-8 font-medium shadow-md ${styles.mainCard}`}
     >
       <div
         className={`items-left flex w-[60%] flex-col justify-center gap-12 ${styles.leftCard}`}
@@ -44,7 +44,7 @@ const index = () => {
         </span>
       </div>
       <div className={`w-[40%] ${styles.rightCard}`}>
-        <Image className="rounded-xl" src={Yunus} alt="Yunus" />
+        <Image className="rounded-xl shadow-2xl" src={Yunus} alt="Yunus" />
       </div>
     </div>
   );
